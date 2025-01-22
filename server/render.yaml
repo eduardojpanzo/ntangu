@@ -1,0 +1,17 @@
+# Exported from Render on 2025-01-14T01:33:39Z
+services:
+- type: web
+  name: task-api
+  runtime: node
+  repo: https://github.com/eduardojpanzo/fullstack-apps
+  plan: free
+  envVars:
+  - key: JWT_SECRET
+    sync: false
+  - key: DATABASE_URL
+    sync: false
+  region: oregon
+  buildCommand: npm i;npm run prisma:deploy; npm run build
+  startCommand: npm run start
+  rootDir: task-manager/server
+version: "1"
