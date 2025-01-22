@@ -2,7 +2,7 @@
   "engines": {
     "node": ">=20.6.0"
   },
-  "name": "task-manager",
+  "name": "ntangu-server",
   "version": "1.0.0",
   "description": "task manager app",
   "main": "index.js",
